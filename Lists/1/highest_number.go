@@ -12,5 +12,5 @@ func highest_number(collection []int) (int, error) {
 		}
 		return highest_number, nil
 	}
-	return 0, errors.New("Empty slice")
+	return 0, errors.New("empty slice")
 }
