@@ -1,3 +1,3 @@
-module lists/1
+module lists.com/one
 
 go 1.17
