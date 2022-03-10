@@ -15,10 +15,10 @@ func ConvertBaseList(coll []int, base int, toBase int) ([]int, error) {
 			return nil, error
 		}
 	}
-	return decimalToBase(baseToDecimal(coll, base), toBase), nil
+	return decimalToBase(BaseToDecimal(coll, base), toBase), nil
 }
 
-func baseToDecimal(coll []int, base int) int {
+func BaseToDecimal(coll []int, base int) int {
 	var total int
 	for i, j := 0, len(coll)-1; j >= 0; i, j = i+1, j-1 {
 		total += coll[j] * int(math.Pow(float64(base), float64(i)))
